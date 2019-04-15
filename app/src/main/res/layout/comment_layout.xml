@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtNoComment"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="139dp"
+        android:text="No comments on this post"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/commentRecycler"
+        android:background="#BEBEBE"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:backgroundTint="#ffffff"
+            android:id="@+id/edtComment"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Comment here..."
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <ImageView
+            android:id="@+id/imgSave"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/send" />
+
+    </LinearLayout>
+
+</RelativeLayout>
